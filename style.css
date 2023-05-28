@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
 
-body{
+* {
     margin: 0;
     padding: 0;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
 }
 
 a{
     text-decoration: none;
-    color: #000;
+    color: #323232;
 }
+
 
 .box-1 {
     display: flex;
@@ -19,8 +22,16 @@ a{
     margin-bottom: 40px;
 }
 
-button{
+.btn{
     cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #007ddd;
+    color: #000;
+    transform: translateY(-3px);
 }
 
 .vdo-box-1{
@@ -58,9 +69,15 @@ iframe{
 }
 
 .cdd{
-    width: 19.6em;
-    height: 14em;
-    border-radius: 10px 10px 0 0;
+    width: 80%;
+    height: 13em;
+    margin: 20px 25px 0 25px;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.box-2:hover .cdd{
+    transform: translateY(-200px);
 }
 
 .box-card {
@@ -69,29 +86,48 @@ iframe{
     justify-content: space-evenly;
 }
 
+.box-2:hover .txt-card{
+    transform: translateY(-200px);
+}
+
+.txt-card-2{
+    font-size: 16px;
+    transition: 0.5s;
+    transform: translateY(100px);
+}
+
+.box-2:hover .txt-card-2{
+    transform: translateY(-200px);
+}
 
 .box-2{
-    background: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    background: #f1f1f1;
     width: 250px;
-    height: 320px;
-    text-align: justify;
+    height: 300px;
+    text-align: center;
     font-size: 0.8em;
     margin-right: 20px;
     margin-bottom: 60px;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px #323232;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .box-2:hover{
     scale: 1.05;
-    transition: 1s;
-    box-shadow: 2px 2px 9px #323232;
+    transition: 0.5s;
+}
+
+.box-2:hover .txt-card{
+    color: #008fff;
 }
 
 .txt-card{
     padding: 20px;
-    font-size: 19px;
-    font-weight: 400px;
+    font-size: 27px;
+    font-weight: 500;
+    transition: 0.5s;
 }
 
 .box-3{
