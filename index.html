@@ -11,18 +11,30 @@
 <body>
 
     <div class="img-principal">
-        <img src="./imagem/baixadasantista.jpg" alt="Foto: Baixada Santista" srcset="" width="100%" height="600px">
+        <img class="img" id="img" src="./imagem/baixada2.jpg" alt="Foto: Baixada Santista" srcset="" width="100%" height="500px">
     </div> 
+
+    <header class="header">
+        <div>
+            <a href="#box-card" class="link-header">Cidades da baixada santista</a>
+        </div>
+
+        <div>
+            <a href="#img">
+                <button class="button-header">Voltar para inicio</button>
+            </a>
+        </div>
+    </header>
 
     <div class="box-1">
 
         <div class="vdo-box-1">
-            <iframe width="500" height="300" src="https://www.youtube.com/embed/7iGqcTYtOow" title="Descubra a Baixada Santista - SP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/7iGqcTYtOow" title="Descubra a Baixada Santista - SP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="txt-box-1">
             <div class="txt-box-1">
-                <h2 class="ttl-amarelo2">Baixada Santista</h2>
+                <h2 style="--color-amarelo: #e7a930" class="ttl-amarelo">Baixada Santista</h2>
                 <p>
                     A Região Metropolitana da Baixada Santista está localizada no litoral paulista, sendo sede do Porto de Santos, o maior 
                     e mais importante complexo portuário da América do Sul, em torno do qual se desenvolveu a economia regional.<br>
@@ -37,14 +49,14 @@
     </div>
 
 
-    <div class="box-card">
+    <div class="box-card" id="box-card">
        
         <a href="santos.html">
             <div class="box-2" >
                 <div class="card">
                     <img class="cdd" src="./imagem/santos.jpg" alt="" srcset="">
                     <h2 class="txt-card">Santos</h2>
-                    <p class="txt-card-2">Santos é um município portuário sede da Região Metropolitana da Baixada Santista, localizado no litoral do estado de São Paulo, no Brasil. Com a maior participação econômica da citada região, abriga o maior porto da América Latina, o principal responsável pela dinâmica econômica da cidade ao lado do turismo, da pesca e do comércio...</p>
+                    <p class="txt-card-2">Santos é um município portuário sede da Região Metropolitana da Baixada Santista. Com a maior participação econômica da citada região, abriga o maior porto da América Latina, o principal responsável pela dinâmica econômica da cidade ao lado do turismo, da pesca e do comércio...</p>
                 </div>
             </div>
         </a>
@@ -61,8 +73,8 @@
         </a>
 
        
-       <a href="praia.html">
-            <div class="box-2" >
+       <a href="praiagrande.html">
+            <div class="box-2">
                 <div class="card">
                     <img class="cdd" src="./imagem/praia.jpg" alt="" srcset="">
                     <h2 class="txt-card">Praia Grande</h2>
@@ -83,7 +95,7 @@
         </a>
 
 
-       <a href="">
+       <a href="guaruja.html">
             <div class="box-2" >
                 <div class="card">
                     <img class="cdd" src="./imagem/guaruja.jpg" alt="" srcset="">
@@ -94,7 +106,7 @@
         </a>
 
        
-       <a href="">
+       <a href="itanhaem.html">
             <div class="box-2" >
                 <div class="card">
                     <img class="cdd" src="./imagem/itanhaem.jpg" alt="" srcset="">
@@ -105,7 +117,7 @@
         </a>
        
 
-       <a href="">
+       <a href="peruibe.html">
             <div class="box-2" >
                 <div class="card">
                     <img class="cdd" src="./imagem/peruibe.webp" alt="" srcset="">
@@ -116,7 +128,7 @@
         </a>
        
 
-       <a href="">
+       <a href="bertioga.html">
             <div class="box-2">
                 <div class="card">
                     <img class="cdd" src="./imagem/bertioga.jpg" alt="" srcset="">
@@ -127,7 +139,7 @@
         </a>
        
 
-        <a href="">
+        <a href="cubatao.html">
             <div class="box-2" >
                 <div class="card">
                     <img class="cdd" src="./imagem/cubatao.jpg" alt="" srcset="">
@@ -140,11 +152,13 @@
     </div>
     </div>
 
+   
+
     <div class="box-3">
         <div class="wave" id="continua"></div>
         <hr>
         <div class="txt-box-3">
-            <h1 class="ttl-amarelo">Baixada Santista</h1>
+            <h1 style="--color-amarelo: #e7a930">Baixada Santista</h1>
             <p>
                 A Baixada Santista abrange os municípios de Bertioga, Guarujá, Santos, São Vicente, Cubatão, Praia Grande, Mongaguá, Itanhaém e Peruíbe. Englobando uma área territorial de 2.428,74 km², possui uma população estimada de 1.845.822 habitantes¹, apresentando ainda um acréscimo populacional de cerca de 1 milhão de pessoas durante a temporada².
             </p>
@@ -161,6 +175,38 @@
                 Na Baixada Santista as principais problemáticas socioambientais relacionam-se ao desmatamento ilegal, caça e pesca irregulares, à urbanização em áreas sujeitas às enchentes, movimentos de massas nas encostas e erosão costeira, a expansão urbana irregular em áreas de preservação ambiental e problemas relacionados aos resíduos sólidos e de poluição em suas amplas vertentes.  
             </p>
         </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Habitantes [2010]</th>
+                    <th>Densidade demográfica [2010]</th>
+                    <th>Capital</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>419.400</td>
+                    <td>1.494,26 hab/km²</td>
+                    <td>Rio de Janeiro</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                    <td>São Paulo</td>
+                    <td>São Paulo</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                    <td>Minas Gerais</td>
+                    <td>Belo Horizonte</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                    <td>Acre</td>
+                    <td>Rio Branco</td>
+                </tr>
+            </tbody>
+        </table>
+    
         <hr>
         <div class="wave2"></div>
     </div>
