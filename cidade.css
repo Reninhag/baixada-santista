@@ -92,7 +92,7 @@ iframe {
 aside {
     display: flex;
     align-items: center;
-    height: 400px;
+    height: 50vh;
     background-color: #dff7f7;
     margin-bottom: 40px;
     box-shadow: 3px 3px 20px rgb(0, 0, 0, 0.2);
@@ -142,7 +142,7 @@ aside {
 .imagens{
     flex: 1 0 auto;
     margin: 0 20px;
-    background-color: #323232;
+    background-color: #545454;
     background-repeat: no-repeat;
     background-size: cover;
     width: 300px;
@@ -150,22 +150,12 @@ aside {
     border-radius: 20px;
     transition: 0.5s;
 }
-.imagens_1 {
-    background-image: url(./imagem/img-santos-1.jpg);
-}
-.imagens_2 {
-    background-image: url(./imagem/img-santos-2.png);
-}
-.imagens_3 {
-    background-image: url(./imagem/img-santos-3.jpg);
-}
-.imagens_4 {
-    background-image: url(./imagem/img-santos-4.jpg);
-}
-.imagens_5 {
-    background-image: url(./imagem/img-santos-5.jpg);
-}
 
+.imagens img{
+   width: 300px;
+   height: 200px;
+   border-radius: 12px;
+}
 /* 
 
             Tabela
