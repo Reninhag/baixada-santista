@@ -218,6 +218,11 @@ iframe {
     padding: 10px;
     text-align: center;
 }
+.mapa-baixada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .wave2 {
     background-color: #008fff;
     width: 100%;
