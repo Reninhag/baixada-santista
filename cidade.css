@@ -89,12 +89,12 @@ iframe {
 */
 
 
-table{
+.box-1 .tabela table{
     border: 1px solid #e0e0e0;
     background-color: #008080;
 }
 
-table, tr,th,td {
+.box-1 .tabela table, tr,th,td {
     padding: 3px;
     justify-content: center;
     align-items: center;
@@ -102,7 +102,7 @@ table, tr,th,td {
     color: #323232;
     border: 1px solid #008080;
 }
-tr, th, td {
+.box-1 .tabela tr, th, td {
     padding: 5px 6px;
     background-color: #fff;
 }
@@ -200,10 +200,48 @@ tr, th, td {
 .onde-ficar {
     height: 25em;
     padding: 50px;
-    margin: 40px 0;
+    margin: 40px 0 0 0;
     accent-color: #008080;
     background-color: #f1f1f1;
 }
 .onde-ficar li{
     padding: 20px;
+}
+
+
+/* 
+
+            Footer
+
+*/
+
+
+footer {
+    background-color: #005757;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    padding: 30px;
+    background-color: rgba(0, 18, 18, 0.2);
+    color: #dadada;
+}
+.footer .site {
+    padding: 0 20px;
+    color: #dadada;
+}
+.footer h2 {
+    padding: 20px 20px;
+}
+.footer .copy {
+    padding: 20px 15px 0;
+    text-align: center;
+}
+.footer hr{
+    color: #dadada;
+}
+.nomes {
+    padding: 0 20px 40px;
+    text-align: justify;
 }
