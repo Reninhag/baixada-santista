@@ -84,6 +84,56 @@ iframe {
 
 /* 
 
+            Caroussel
+
+*/
+
+.caroussel {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    transition: 0.5;
+    margin-bottom: 40px;
+}
+.caroussel:hover .imagens{
+    animation-name: carousselhover;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+
+.imagens .imagens1 {
+    background-image: url(./imagem/comida.jpg);
+}
+
+
+@keyframes carousselhover {
+    50% {
+        transform: translateX(-800px);
+        transition: 20s;
+    }
+    100%{
+        transform: translateX(0px);
+        transition: 20s;
+    }
+}
+
+.imagens{
+    flex: 1 0 auto;
+    margin: 0 20px;
+    background-color: #323232;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+    transition: 0.5s;
+}
+.imagens .imagens1 {
+    background-image: url(./imagem/comida.jpg);
+}
+
+/* 
+
             Tabela
 
 */
