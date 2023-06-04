@@ -177,7 +177,7 @@ iframe {
 .onde-comer{
     height: 25em;
     padding: 50px;
-    margin: 40px 0;
+    margin: 40px 0 0 0;
     accent-color: #008080;
     background-color: #f1f1f1;
 }
@@ -189,7 +189,6 @@ iframe {
 .oque-fazer{
     height: 23em;
     padding: 50px;
-    margin: 40px 0;
     accent-color: #008080;
 }
 .oque-fazer li{
