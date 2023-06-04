@@ -6,6 +6,7 @@ html {
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     font-family: "Poppins";
 }
 body {
@@ -58,7 +59,7 @@ iframe {
     width: 100%;
     height: 9%;
     background-color: #008080;
-    z-index: 1;
+    z-index: 99;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
     justify-content: space-evenly;
     align-items: center;
@@ -88,32 +89,52 @@ iframe {
 
 */
 
+aside {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    background-color: #dff7f7;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 20px rgb(0, 0, 0, 0.2);
+}
+
+.seta-esquerda {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #008080;
+    z-index: 1;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
 .caroussel {
     overflow: hidden;
     display: flex;
     flex-wrap: nowrap;
-    cursor: pointer;
     transition: 0.5;
-    margin-bottom: 40px;
+}
+#seta-esquerda{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin:  0 10px;
+    z-index: 2;
+    cursor: pointer;
 }
 .caroussel:hover .imagens{
     animation-name: carousselhover;
-    animation-duration: 40s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
 }
 
-.imagens .imagens1 {
-    background-image: url(./imagem/comida.jpg);
-}
-
-
 @keyframes carousselhover {
     50% {
-        transform: translateX(-800px);
+        transform: translateX(-400px);
         transition: 20s;
     }
     100%{
-        transform: translateX(0px);
+        transform: translateX(-0px);
         transition: 20s;
     }
 }
@@ -124,12 +145,25 @@ iframe {
     background-color: #323232;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 400px;
+    width: 300px;
     height: 200px;
+    border-radius: 20px;
     transition: 0.5s;
 }
-.imagens .imagens1 {
-    background-image: url(./imagem/comida.jpg);
+.imagens_1 {
+    background-image: url(./imagem/img-santos-1.jpg);
+}
+.imagens_2 {
+    background-image: url(./imagem/img-santos-2.png);
+}
+.imagens_3 {
+    background-image: url(./imagem/img-santos-3.jpg);
+}
+.imagens_4 {
+    background-image: url(./imagem/img-santos-4.jpg);
+}
+.imagens_5 {
+    background-image: url(./imagem/img-santos-5.jpg);
 }
 
 /* 
